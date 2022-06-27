@@ -1,7 +1,15 @@
+// .title {
+//     @include font(36px, 700, 1.7);
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--primary-text-color);
+//     margin-bottom: 50px;
+// }
+
 .title {
-    @include font(36px, 700, 1.7);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    margin-bottom: 50px;
+@include font(28px, 700, 1.18);
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+margin-bottom: 30px;
 }

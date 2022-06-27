@@ -1,66 +1,137 @@
+// .team {
+//     background-color: var(--secondary-bg-color);
+//     &__list {
+//         @include grid-wrap;
+//         }
+    
+//     &__item {
+//         margin-left: 30px;
+//         margin-top: 30px;
+//         flex-basis: calc((100% - 120px) / 4);
+//         }
+    
+//     &__label {
+//         background-color: var(--white-color);
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//             0px 2px 1px rgba(0, 0, 0, 0.2);
+//         border-radius: 0px 0px 4px 4px;
+//         padding: 30px 30px 30px 30px;
+//         }
+    
+//     &__name {
+//         font-weight: 500;
+//         color: var(--primary-text-color);
+//         margin-bottom: 10px;
+//         }
+    
+//     &__position,
+//     &__name {
+//         font-size: 16px;
+//         line-height: 1.19;
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         }
+// }
+
+// .social {
+//     @include flex-aline;
+//     margin-top: 16px;
+// }
+
+// .social__link {
+//     @include flex-aline;
+//     width: 44px;
+//     height: 44px;
+//     border: 0;
+//     border-radius: 50%;
+//     color: var(--border-color-icon);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//         }
+// }
+
+// .social__item:not(:last-child) {
+//     margin-right: 10px;
+// }
+
+// .social__icon {
+//     fill: currentColor;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     .social__link:hover &,
+//     .social__link:focus & {
+//         color: var(--white-color);
+//         }
+// }
+
 .team {
     background-color: var(--secondary-bg-color);
     &__list {
-        @include grid-wrap;
-        }
-    
+        margin-bottom: -30px;
+    }
     &__item {
-        margin-left: 30px;
-        margin-top: 30px;
-        flex-basis: calc((100% - 120px) / 4);
-        }
-    
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__photo {
+        width: 100%;
+    }
     &__label {
         background-color: var(--white-color);
+        background-size: cover;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        padding: 30px 30px 30px 30px;
-        }
-    
+        padding-top: 30px;
+        padding-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+    }
     &__name {
         font-weight: 500;
         color: var(--primary-text-color);
         margin-bottom: 10px;
-        }
-    
+    }
     &__position,
     &__name {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        }
+    }
 }
-
+ 
 .social {
-    @include flex-aline;
-    margin-top: 16px;
+@include flex-aline;
+margin-top: 16px;
 }
 
 .social__link {
-    @include flex-aline;
-    width: 44px;
-    height: 44px;
-    border: 0;
-    border-radius: 50%;
-    color: var(--border-color-icon);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@include flex-aline;
+width: 44px;
+height: 44px;
+border: 0;
+border-radius: 50%;
+color: var(--border-color-icon);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: var(--accent-color);
-        }
+    background-color: var(--accent-color);
+    }
 }
 
-.social__item:not(:last-child) {
-    margin-right: 10px;
+.social__item:not(:last-child){
+margin-right: 10px;
 }
 
 .social__icon {
-    fill: currentColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: currentColor;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .social__link:hover &,
     .social__link:focus & {
-        color: var(--white-color);
-        }
+            color: var(--white-color);
+    }
 }
