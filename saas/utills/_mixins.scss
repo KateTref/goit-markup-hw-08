@@ -1,0 +1,16 @@
+@mixin grid-wrap($disp:flex, $ml:-30px, $mt:-30px, $fw:wrap) {
+    display: $disp;
+    margin-left: $ml;
+    margin-top: $mt;
+    flex-wrap: $fw;
+}
+@mixin flex-aline($disp:flex, $jc:center, $ai:center) {
+    display: $disp;
+    justify-content: $jc;
+    align-items: $ai;
+} 
+@mixin font($fs:14px, $fw:700, $lh:1.14) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
