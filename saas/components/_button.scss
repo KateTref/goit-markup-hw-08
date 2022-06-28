@@ -56,3 +56,14 @@
         background-color: var(--hover-btn-color);
     }
 }
+
+.abonnement__btn {
+display: inline-flex;
+align-items: center;
+max-width: 200px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__icon-send {
+margin-left: 10px;
+}
