@@ -593,6 +593,8 @@ body {
 .product__photo {
   margin-right: 0;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product__text {

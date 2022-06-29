@@ -167,8 +167,10 @@ margin-bottom: 30px;
 
 .product__photo {
     margin-right: 0;
-    width: 100%
+    width: 100%;
+    object-fit: cover;
 }
+
 .product__text {
     position: absolute;
     top: 0;
