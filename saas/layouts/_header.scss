@@ -76,24 +76,37 @@
     padding-top: 16px;
     padding-bottom: 16px;
     position: relative;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-btn-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 .menu-nav {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
+    top: 0;
     left: 0;
-    top: 99%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden; 
     background-color: var(--white-color);
     padding: 10px 10px 48px 25px;
+        &.is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
 }
 
 .menu-nav__item {
@@ -135,17 +148,24 @@
     color: var(--accent-color);
     @include font(18px, 500, 1.22);
     letter-spacing: 0.02em;
+}
+
+.menu-soc-list__item {
+    display: inline;
     padding-right: 10px;
     &:not(:last-child) {
         border-right: 1px solid var(--secondary-text-color);
         margin-right: 10px;
     }
 }
-
 .head-mob__btn {
     background-color: transparent;
     border: none;
     &:hover, &:focus {
         fill: var(--accent-color);
     }
+}
+
+.menu-close {
+    margin-left: auto;
 }
