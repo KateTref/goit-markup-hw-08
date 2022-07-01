@@ -12,12 +12,29 @@
 // }
 
 .container {
-    max-width: 480px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    @media  screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
     }
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.head__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
