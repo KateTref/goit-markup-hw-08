@@ -30,7 +30,27 @@
     padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/Img-background-mobile.jpg');
+        url('../images/Img-background-mob.jpg');
+    @include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/Img-background-mob-2x.jpg');
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/Img-background-tab.jpg');
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/Img-background-tab-2x.jpg');
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/Img-background.jpg');
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/Img-background-2x.jpg');
+        }
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,5 +63,9 @@
         text-transform: uppercase;
         color: var(--white-color);
         margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+            @include font(44px, 900, 1.36);
+        }
     }
+
 }

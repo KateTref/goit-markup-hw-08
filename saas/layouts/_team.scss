@@ -68,11 +68,29 @@
 .team {
     background-color: var(--secondary-bg-color);
     &__list {
-        margin-bottom: -30px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: -30px;
+        }
+        @media screen and (min-width: 768px) {
+            @include grid-wrap;
+        }
     }
     &__item {
-        width: 100%;
-        margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc((100% - 60px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc((100% - 120px) / 4);
+        }
+        
     }
     &__photo {
         width: 100%;
