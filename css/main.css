@@ -471,6 +471,7 @@ body {
   .abonnement__input-wrapper {
     margin-bottom: 0;
     margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -540,6 +541,10 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.head {
+  border-bottom: 1px solid var(--line-color);
 }
 
 .head-mob {
@@ -792,6 +797,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img-background-mob-2x.jpg");
@@ -900,6 +911,11 @@ body {
   color: var(--black-color);
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .features__name {
+    text-align: start;
+  }
 }
 
 .features__text {
@@ -1174,6 +1190,7 @@ body {
   }
   .footer-wrap__logo-address {
     margin-right: 70px;
+    text-align: start;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1238,7 +1255,6 @@ body {
     padding-top: 8px;
   }
 }
-
 .join__social-link {
   display: -webkit-box;
   display: -ms-flexbox;
